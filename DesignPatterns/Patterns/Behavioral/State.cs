@@ -1,11 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns.Patterns.Behavioral
+﻿namespace DesignPatterns.Patterns.Behavioral
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    /// <summary>
+    /// Frequency of use: 3/5.
+    /// Short: Alter an object's behavior when its state changes.
+    /// Description: 
+    /// Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
+    /// </summary>
     class State
     {
     }
