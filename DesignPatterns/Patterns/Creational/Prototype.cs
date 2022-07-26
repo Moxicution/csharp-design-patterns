@@ -6,7 +6,7 @@
     /// Description:
     /// Specify the kind of objects to create using a prototypical instance, and create new objects by copying this prototype.
     /// </summary>
-    class Prototype
+    internal class Prototype
     {
     }
 }
