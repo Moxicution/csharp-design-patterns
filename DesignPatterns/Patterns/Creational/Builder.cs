@@ -1,11 +1,5 @@
 ﻿namespace DesignPatterns.Patterns.Creational
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-
     /// <summary>
     /// Frequency of use: 2/5.
     /// Short: Separates object construction from its representation.

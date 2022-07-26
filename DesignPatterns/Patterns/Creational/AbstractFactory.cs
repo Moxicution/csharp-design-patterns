@@ -1,20 +1,21 @@
 ﻿namespace DesignPatterns.Patterns.Creational
 {
     using System;
+
     /// <summary>
     /// Frequency of use: 5/5.
     /// Short: Creates an instance of several families of classes.
     /// Description: 
     /// Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
     /// </summary>
-   
-    interface IPackageFactory
+
+    public interface IPackageFactory
     {
         IColor GetColor();
         ISize GetSize();
     }
 
-    class SantasHouse : IPackageFactory
+    internal class SantasHouse : IPackageFactory
     {
         public IColor GetColor()
         {
@@ -27,7 +28,7 @@
         }
     }
 
-    class GrandmasHouse : IPackageFactory
+    internal class GrandmasHouse : IPackageFactory
     {
         public IColor GetColor()
         {
@@ -72,17 +73,17 @@
         }
     }
 
-    internal interface ISize
+    public interface ISize
     {
         string GetSize();
     }
 
-    internal interface IColor
+    public interface IColor
     {
         string GetColor();
     }
 
-    class PresentDistributer
+    internal class PresentDistributer
     {
         internal IPackageFactory PackageFactory { get; set; }
 
@@ -104,13 +105,13 @@
 
     internal class AbstractFactory
     {
-        static void Main()
+        private static void Main()
         {
             Console.Write("**** Welcome to Abstract Factory pattern *******\n Let's first go to Santa for a present and then go to grandma.");
             PresentDistributer rudolph = new PresentDistributer();
             rudolph.CreatePackageWithColor("santa");
             rudolph.CreatePackageWithColor("grandma");
             Console.ReadLine();
-        } 
+        }
     }
 }

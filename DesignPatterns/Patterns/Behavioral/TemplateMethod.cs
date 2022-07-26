@@ -1,11 +1,5 @@
 ﻿namespace DesignPatterns.Patterns.Behavioral
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-
     /// <summary>
     /// Frequency of use: 3/5.
     /// Short: Defer the exact steps of an algorithm to a subclass.
